@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climatización Pilar</title>
+    <style>
+        body {
+            background-image: url('https://mi-imagen-generada.com/climatizacion-pilar.jpg'); /* Imagen generada */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, select, textarea, button {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            background: green;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Climatización Pilar</h1>
+        <p>Especialistas en instalaciones sanitarias, calefacción, gas y más.</p>
+        
+        <h2>Solicita tu cotización</h2>
+        <form class="formulario" action="https://api.whatsapp.com/send?phone=542346634476" method="get">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="text" name="empresa" placeholder="Nombre de la empresa">
+            <input type="text" name="arquitecto" placeholder="Nombre del arquitecto">
+            <label for="categoria">Seleccione una categoría:</label>
+            <select name="categoria" required>
+                <option value="agua">Instalación de agua</option>
+                <option value="gas">Instalación de gas</option>
+                <option value="radiadores">Calefacción por radiadores</option>
+                <option value="losa">Calefacción por losa radiante</option>
+                <option value="aires">Preinstalación de aire acondicionado</option>
+                <option value="cloacas">Instalación de cloacas</option>
+                <option value="otros">Otros</option>
+            </select>
+            <textarea name="mensaje" placeholder="Detalles adicionales" rows="4"></textarea>
+            <input type="file" name="planos" accept="application/pdf">
+            <button type="submit">Enviar a WhatsApp</button>
+        </form>
+    </div>
+</body>
+</html>
